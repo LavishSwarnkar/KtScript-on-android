@@ -1,4 +1,4 @@
-package com.streamliners.myapplication.ui.theme
+package com.streamliners.ktscript.ui.theme
 
 import android.app.Activity
 import android.os.Build

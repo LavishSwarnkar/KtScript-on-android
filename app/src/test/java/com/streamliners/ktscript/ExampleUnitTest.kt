@@ -1,4 +1,4 @@
-package com.streamliners.myapplication
+package com.streamliners.ktscript
 
 import org.junit.Test
 
