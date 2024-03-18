@@ -5,6 +5,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -72,7 +73,8 @@ class MainActivity : BaseActivity() {
         }
 
         Column(
-            Modifier.fillMaxSize(),
+            Modifier.fillMaxSize()
+                .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterVertically)
         ) {
@@ -103,9 +105,9 @@ class MainActivity : BaseActivity() {
         b: String
     ): String {
         val kotlinCode = """
-        fun multiply(a: Int, b: Int): Int { return $expression }
+        fun execute(a: Int, b: Int): Int { return $expression }
         
-        print(multiply($a, $b))
+        print(execute($a, $b))
     """.trimIndent()
 
         return try {
